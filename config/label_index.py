@@ -1,0 +1,36 @@
+import json
+
+label_index = {
+    "label_to_index_dict": {
+        "img_good": 0,
+        "img_bad_contaminated": 1,
+        "img_bad_ex_rough": 2,
+        "img_bad_multi_tip": 3,
+        "img_bad_unstable": 4,
+        "img_bad_weak_contact": 5,
+        "dip_good": 6,
+        "dip_bad": 7,
+    },
+    "index_to_label_dict": {
+        0: "img_good",
+        1: "img_bad_contaminated",
+        2: "img_bad_ex_rough",
+        3: "img_bad_multi_tip",
+        4: "img_bad_unstable",
+        5: "img_bad_weak_contact",
+        6: "dip_good",
+        7: "dip_bad",
+    },
+    "label_to_index_binary_dict": {
+        "img_good": 0,
+        "img_bad": 1,
+    },
+    "index_to_label_binary_dict": {
+        0: "img_good",
+        1: "img_bad",
+    },
+}
+
+if __name__=='__main__':
+    with open('config/label_index.json', 'w') as fs:
+        json.dump(label_index, fs)
