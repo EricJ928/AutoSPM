@@ -5,4 +5,4 @@ AutoSPM is a artificial intelligence framework for automated Scanning Probe Micr
 The train/val results can be found [here](https://github.com/EricJ928/AutoSPM/blob/main/model/plt_acc.ipynb)
 
 Image examples:
-![alt text](README/au.png)
+![alt text](./README/au.png)
